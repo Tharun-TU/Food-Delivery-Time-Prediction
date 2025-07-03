@@ -1,0 +1,88 @@
+import { NextResponse } from "next/server"
+
+const foodItems = [
+  {
+    id: "1",
+    name: "Margherita Pizza",
+    description: "Classic pizza with fresh tomatoes, mozzarella, and basil",
+    price: 299,
+    image: "/placeholder.svg?height=200&width=300",
+    rating: 4.5,
+    category: "Pizza",
+    preparationTime: 15,
+  },
+  {
+    id: "2",
+    name: "Chicken Biryani",
+    description: "Aromatic basmati rice with tender chicken and spices",
+    price: 349,
+    image: "/placeholder.svg?height=200&width=300",
+    rating: 4.7,
+    category: "Indian",
+    preparationTime: 25,
+  },
+  {
+    id: "3",
+    name: "Veggie Burger",
+    description: "Delicious plant-based burger with fresh vegetables",
+    price: 199,
+    image: "/placeholder.svg?height=200&width=300",
+    rating: 4.2,
+    category: "Burger",
+    preparationTime: 10,
+  },
+  {
+    id: "4",
+    name: "Pad Thai",
+    description: "Traditional Thai stir-fried noodles with shrimp",
+    price: 279,
+    image: "/placeholder.svg?height=200&width=300",
+    rating: 4.4,
+    category: "Thai",
+    preparationTime: 12,
+  },
+  {
+    id: "5",
+    name: "Caesar Salad",
+    description: "Fresh romaine lettuce with parmesan and croutons",
+    price: 179,
+    image: "/placeholder.svg?height=200&width=300",
+    rating: 4.1,
+    category: "Salad",
+    preparationTime: 5,
+  },
+  {
+    id: "6",
+    name: "Chocolate Brownie",
+    description: "Rich and fudgy chocolate brownie with vanilla ice cream",
+    price: 129,
+    image: "/placeholder.svg?height=200&width=300",
+    rating: 4.8,
+    category: "Dessert",
+    preparationTime: 8,
+  },
+  {
+    id: "7",
+    name: "Sushi Platter",
+    description: "Fresh assorted sushi with wasabi and ginger",
+    price: 599,
+    image: "/placeholder.svg?height=200&width=300",
+    rating: 4.6,
+    category: "Japanese",
+    preparationTime: 20,
+  },
+  {
+    id: "8",
+    name: "Fish Tacos",
+    description: "Grilled fish tacos with avocado and lime",
+    price: 249,
+    image: "/placeholder.svg?height=200&width=300",
+    rating: 4.3,
+    category: "Mexican",
+    preparationTime: 15,
+  },
+]
+
+export async function GET() {
+  return NextResponse.json(foodItems)
+}
