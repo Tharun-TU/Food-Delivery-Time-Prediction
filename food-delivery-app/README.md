@@ -1,4 +1,4 @@
-# 🍕 FoodieExpress - Full-Stack Food Delivery App
+Full-Stack Food Delivery App
 
 A comprehensive food delivery application with AI-powered delivery time prediction, built with Next.js, Node.js, and Machine Learning.
 
